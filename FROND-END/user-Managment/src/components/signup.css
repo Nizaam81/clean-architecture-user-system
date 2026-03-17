@@ -1,4 +1,4 @@
-
+/* Reset */
 * {
     margin: 0;
     padding: 0;
@@ -17,11 +17,11 @@
 }
 
 
-.container {
+.signup-box {
     width: 100%;
-    max-width: 360px;
+    max-width: 380px;
     background: #1a1a1a;
-    padding: 30px 24px;
+    padding: 32px 26px;
     border-radius: 14px;
     display: flex;
     flex-direction: column;
@@ -31,24 +31,24 @@
     transition: 0.3s ease;
 }
 
-.container:hover {
+
+.signup-box:hover {
     box-shadow: 0 20px 50px rgba(255, 0, 0, 0.15);
 }
 
 
 .title {
-    color: #ffffff;
+    color: #fff;
     text-align: center;
     font-size: 22px;
     font-weight: 600;
 }
 
-
 .subtitle {
     color: #aaa;
     text-align: center;
     font-size: 13px;
-    margin-bottom: 8px;
+    margin-bottom: 6px;
 }
 
 
@@ -59,7 +59,8 @@
 }
 
 
-.input {
+.form input {
+    width: 100%;
     padding: 9px 10px;
     border-radius: 6px;
     border: 1px solid #333;
@@ -71,18 +72,19 @@
 }
 
 
-.input::placeholder {
+.form input::placeholder {
     color: #888;
 }
 
 
-.input:focus {
+.form input:focus {
     border-color: #ff2e2e;
     box-shadow: 0 0 6px rgba(255, 0, 0, 0.4);
 }
 
-button {
-    margin-top: 6px;
+
+.form button {
+    margin-top: 8px;
     padding: 10px;
     border-radius: 6px;
     border: none;
@@ -94,27 +96,16 @@ button {
     transition: 0.3s ease;
 }
 
-button:hover {
+
+.form button:hover {
     background: linear-gradient(135deg, #ff4d4d, #800000);
     transform: translateY(-1px);
 }
 
+
 .extra {
     text-align: center;
-    margin-top: 8px;
-}
-
-
-.extra a {
-    display: block;
-    font-size: 13px;
-    color: #aaa;
-    margin-bottom: 6px;
-    text-decoration: none;
-}
-
-.extra a:hover {
-    color: #ff2e2e;
+    margin-top: 6px;
 }
 
 
@@ -122,6 +113,7 @@ button:hover {
     font-size: 12px;
     color: #777;
 }
+
 
 .extra span {
     color: #ff2e2e;
@@ -134,8 +126,9 @@ button:hover {
 
 
 @media (max-width: 480px) {
-    .container {
+    .signup-box {
         padding: 24px 18px;
+        border-radius: 12px;
     }
 
     .title {
@@ -146,12 +139,12 @@ button:hover {
         font-size: 12px;
     }
 
-    .input {
+    .form input {
         font-size: 13px;
         padding: 8px;
     }
 
-    button {
+    .form button {
         font-size: 14px;
         padding: 9px;
     }

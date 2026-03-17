@@ -1,25 +1,39 @@
-import "./login.css"
+import "./login.css";
 
 export default function Login() {
     return (
-        <div className="container">
+        <div className="wrapper">
+            <div className="container">
 
-            <input
-                className="username"
-                type="text"
-                placeholder="Username"
-            />
+                <h1 className="title">User Management System</h1>
+                <p className="subtitle">
+                    Sign in to manage users, roles and permissions
+                </p>
 
-            <input
-                className="password"
-                type="password"
-                placeholder="Password"
-            />
+                <form className="form">
+                    <input
+                        className="input"
+                        type="text"
+                        placeholder="Enter your username or email"
+                    />
 
-            <button>Login</button>
+                    <input
+                        className="input"
+                        type="password"
+                        placeholder="Enter your password"
+                    />
 
-            <a>Forgot Password?</a>
+                    <button type="submit">Login</button>
+                </form>
 
+                <div className="extra">
+                    <a href="#">Forgot Password?</a>
+                    <p>
+                        Don’t have an account? <span>Register</span>
+                    </p>
+                </div>
+
+            </div>
         </div>
-    )
+    );
 }
