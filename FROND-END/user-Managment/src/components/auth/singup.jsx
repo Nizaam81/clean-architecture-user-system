@@ -1,6 +1,8 @@
-import "./signup.css";
+import "../auth/signup.css";
+import { useNavigate } from "react-router-dom";
 
 export default function Signup() {
+    const navigate = useNavigate();
     return (
         <div className="wrapper">
             <div className="signup-box">
@@ -22,7 +24,7 @@ export default function Signup() {
 
                 <div className="extra">
                     <p>
-                        Already have an account? <span>Login</span>
+                        Already have an account? <span onClick={() => navigate("/login")}>Login</span>
                     </p>
                 </div>
 
